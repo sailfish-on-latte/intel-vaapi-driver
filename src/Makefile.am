@@ -27,6 +27,7 @@ BUILT_SOURCES	=
 
 AM_CPPFLAGS = \
 	-DPTHREADS		\
+	-I/usr/lib/droid-devel/include/libdrm \
 	$(DRM_CFLAGS)		\
 	$(LIBVA_DEPS_CFLAGS)	\
 	$(NULL)
