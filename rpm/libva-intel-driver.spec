@@ -1,7 +1,7 @@
 #global _with_gen4asm 1
 
 Name:		libva-intel-driver
-Version:	2.2.0
+Version:	2.4.0
 Release:	3%{?dist}
 Summary:	HW video decode support for Intel integrated graphics
 License:	MIT and EPL
@@ -24,7 +24,7 @@ Provides: intel-vaapi-driver = %{version}-%{release}
 
 %{?_with_gen4asm:BuildRequires: pkgconfig(intel-gen4asm)}
 BuildRequires:	pkgconfig(libudev)
-BuildRequires:	libdrm-devel >= 2.4.23
+BuildRequires:	libdrm-devel >= 2.4.52
 BuildRequires:	libpciaccess-devel
 BuildRequires:  libva-devel >= 1.0.0
 BuildRequires:	mesa-llvmpipe-libEGL-devel
