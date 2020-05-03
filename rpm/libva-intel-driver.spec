@@ -40,7 +40,7 @@ HW video decode support for Intel integrated graphics.
 
 
 %prep
-%autosetup -p1 -n intel-vaapi-driver-%{version}
+%autosetup -p1 -n libva-intel-driver-%{version}
 %{?_with_gen4asm:
 #Move pre-built (binary) asm code
 for f in src/shaders/vme/*.g?b ; do
